@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -6,7 +6,7 @@ const Hero = () => {
   const line2 = "Aspirant Full-stack";
 
   // Configuration de l'animation du conteneur pour l'effet machine à écrire
-  const typewriterContainerVariants = {
+  const typewriterContainerVariants: Variants = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
@@ -18,12 +18,12 @@ const Hero = () => {
   };
 
   // Configuration de chaque lettre
-  const letterVariants = {
+  const letterVariants: Variants = {
     hidden: { opacity: 0, display: "none" },
     visible: { opacity: 1, display: "inline" },
   };
 
-  // Animation d'apparition du bouton (Correction TS : sans type explicite ou avec casting)
+  // Animation d'apparition du bouton - Correction avec "as const"
   const buttonVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { 
@@ -36,9 +36,9 @@ const Hero = () => {
         stiffness: 100,
       }
     },
-  };
+  } as const;
 
-  // Animation de pulsation (Correction TS : le tableau [1, 1.03, 1] est maintenant accepté)
+  // Animation de pulsation - Correction avec "as const"
   const buttonPulseVariants = {
     initial: { scale: 1 },
     pulse: {
@@ -49,7 +49,7 @@ const Hero = () => {
         ease: "easeInOut",
       }
     }
-  };
+  } as const;
 
   return (
     <div className="flex flex-col items-center justify-center text-center">
@@ -91,18 +91,18 @@ const Hero = () => {
         Je recherche une alternance pour septembre 2026.
       </motion.p>
 
-      {/* Bouton d'action corrigé */}
+      {/* Bouton d'action avec casting "any" de sécurité pour le build */}
       <motion.div
         className="flex flex-wrap justify-center gap-4"
         initial="hidden"
         animate="visible"
-        variants={buttonVariants}
+        variants={buttonVariants as any}
       >
         <motion.a
           href="#contact"
           className="flex items-center gap-2 px-8 py-4 bg-brand-primary text-white rounded-full font-semibold hover:bg-brand-primary/90 transition-all hover:scale-105 shadow-lg shadow-brand-primary/20"
           animate="pulse"
-          variants={buttonPulseVariants}
+          variants={buttonPulseVariants as any}
         >
           Me contacter
           <ArrowRight size={18} />
