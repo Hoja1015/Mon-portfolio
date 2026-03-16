@@ -34,7 +34,7 @@ export const Skills = () => {
         >
           <div className="flex items-center justify-center gap-4 mb-6">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Mes compétences<span className="text-brand-primary">.</span>
+              Mes compétences
             </h2>
           </div>
         </motion.div>

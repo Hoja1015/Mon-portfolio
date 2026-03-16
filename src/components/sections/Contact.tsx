@@ -58,7 +58,6 @@ const Contact = () => {
             {CONTACT_METHODS.map((method, index) => (
               <motion.a
                 key={index}
-                href={method.link}
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}

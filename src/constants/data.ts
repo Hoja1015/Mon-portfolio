@@ -23,27 +23,27 @@ interface typeSkills {
 
 export const SKILLS:typeSkills[] = [
   {
-    category: "Frontend",
+    category: "Principales",
     icon: "https://img.icons8.com/?size=100&id=fD9sSf7OsNzI&format=png&color=000000.png",
-    items: ["Javascript", "TypeScript", "React", "Vue.js", "Angular", "Tailwind", "Boostrap"],
+    items: ["TypeScript", "React",  "Tailwind", "Node.js", "Python"],
     color: "from-blue-500 to-cyan-800"
   },
   {
-    category: "Backend",
+    category: "Secondaires",
     icon: "https://img.icons8.com/fluency/96/node-js.png",
-    items: ["Node.js", "FastApi", "Python"],
+    items: ["Vue.js", "Symfony", "Angular", "MySQL", "PHP"],
     color: "from-green-500 to-emerald-800"
   },
   {
     category: "Outils",
     icon: "https://img.icons8.com/fluency/96/docker.png",
-    items: [ "Git/GitHub", "Vercel", "Laragon", "Figma"],
+    items: [ "Git/GitHub", "Figma", "Workbench","Postman" ],
     color: "from-blue-500 to-indigo-800"
   },
   {
     category: "En cours",
     icon: "https://img.icons8.com/?size=100&id=2msi5wIpPPec&format=png&color=000000",
-    items: [ "Express", "Symphony", "Docker", "Framer Motion" ],
+    items: [ "Express","Docker", "Framer Motion" ],
     color: "from-pink-500 to-rose-900"
   }
 ];
@@ -71,21 +71,21 @@ export const PROJECTS : typeProjects[] = [
     icon: "https://img.icons8.com/?size=100&id=fYg8cp9LAp4Q&format=png&color=000000"
   },
   {
-    title: "Portfolio Moderne",
-    description: "Mon site qui met en valeur mon identité, ce que je recherche et surtout ce que je sais faire avec les technologies que j'ai appris ",
-    tags: ["React", "Typescript", "Tailwind", "Framer-Motion", "vercel"],
-    github: "https://github.com/Hoja1015/Portfolio",
-    demo: "#",
-    image: "https://i.ibb.co/7JxzLS5h/portfolio.png",
+    title: "Site de Ecommerce",
+    description: "Vente de chaussures, vêtements, accéssoires, pour hommes/femmes avec l'acces admin pour la gestion des stocks",
+    tags: ["React", "Tailwind", "Supabase", "vercel"],
+    github: "https://github.com/Hoja1015/Ecommerce-bdm-shop",
+    demo: "https://bdmshop.vercel.app/",
+    image: "https://i.ibb.co/DDNDKh7Z/Capture-d-cran-2026-03-16-121005.png",
     icon: "https://img.icons8.com/fluency/48/artificial-intelligence.png"
   },
   {
-    title: "Dashboard Admin",
-    description: "Application PWA permettant une gestion de projet agile avec drag-and-drop et notifications push.",
-    tags: ["Vue.js", "javascript", "Node.js", "Github"],
+    title: "Residence Etudiante",
+    description: "Application favorisant la cohésion d'une residence étudiante par un système de gamification",
+    tags: ["Vue.js", "symfony", "phpmyadmin", "Github"],
     github: "https://github.com/ASSOLOU/projet-fil-rouge",
-    demo: "#",
-    image: "https://i.ibb.co/mL4BNZQ/Dashboard-vue.png",
+    demo: "https://frontend-smile-up.vercel.app/",
+    image: "https://i.ibb.co/hFXSPXpw/Capture-d-cran-2026-03-16-122013.png",
     icon: "https://img.icons8.com/fluency/48/todo-list.png"
   }
 ];
@@ -108,7 +108,6 @@ interface typeContact {
   value: string;
   icon: string;
   color: string;
-  link?: string;
 
 }
 
@@ -118,14 +117,12 @@ export const CONTACT_METHODS: typeContact[] = [
     value: "kongbo.hoja@gmail.com",
     icon: "https://img.icons8.com/fluency/96/mail.png",
     color: "from-blue-400 to-indigo-700",
-    link: "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
   },
   {
     label: "LinkedIn",
     value: "Hoja Le brillant KONGBO BINDRO",
     icon: "https://img.icons8.com/fluency/96/linkedin.png",
     color: "from-blue-600 to-blue-800",
-    link: "https://www.linkedin.com/in/hoja-le-brillant-kongbo-bindro-0848b1284/"
   },
   {
     label: "Localisation",

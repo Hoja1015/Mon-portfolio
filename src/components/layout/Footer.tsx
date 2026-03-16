@@ -79,10 +79,7 @@ export const Footer = () => {
 
         {/* Ligne finale : Copyright */}
         <div className="pt-8 border-t border-slate-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
-          <p>© {new Date().getFullYear()} HojDEV — Fait avec ❤️ en France</p>
-          <div className="flex gap-8">
-            <a href="#" className="hover:text-brand-primary transition-colors">Mentions Légales</a>
-          </div>
+          <p>© {new Date().getFullYear()} HojDEV — Développeur passionné</p>
         </div>
       </div>
     </footer>

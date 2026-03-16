@@ -9,7 +9,7 @@ export const AboutMe = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-center gap-4">
           <h2 className="text-4xl md:text-5xl text-center font-black mb-6 tracking-tight">
-            A Propos de moi<span className="text-brand-primary">.</span>
+            A Propos de moi
           </h2>
           </div>      
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
