@@ -141,6 +141,6 @@ interface typeFooter {
 
 export const SOCIALS: typeFooter[] = [
   { name: "GitHub", icon: "https://img.icons8.com/fluency/48/github.png", link: "https://github.com/" },
-  { name: "LinkedIn", icon: "https://img.icons8.com/fluency/48/linkedin.png", link: "https://www.linkedin.com/in/hoja-le-brillant-kongbo-bindro-0848b1284/" },
+  { name: "LinkedIn", icon: "https://img.icons8.com/fluency/48/linkedin.png", link: "https://www.linkedin.com/in/hoja-le-brillant-kongbo-0848b1284/?locale=%3Dtrue" },
   { name: "Instagram", icon: "https://img.icons8.com/fluency/48/instagram-new.png", link: "https://www.instagram.com/hoja_lb/" },
 ];
