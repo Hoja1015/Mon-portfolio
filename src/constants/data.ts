@@ -25,7 +25,7 @@ export const SKILLS:typeSkills[] = [
   {
     category: "Principales",
     icon: "https://img.icons8.com/?size=100&id=fD9sSf7OsNzI&format=png&color=000000.png",
-    items: ["TypeScript", "React",  "Tailwind", "Node.js", "Python"],
+    items: ["TypeScript", "React",  "Tailwind", "Node.js", "Python", "Fastapi"],
     color: "from-blue-500 to-cyan-800"
   },
   {
